@@ -13,7 +13,7 @@ function SendMessage() {
     player.SetVar("response", "Please wait...");
     player.SetVar("message", "");
     var xhr = new XMLHttpRequest();
-    var url = 'https://api.groq.com/v1/chat/completions';
+    var url = 'https://api.groq.com/openai/v1';
     xhr.open('POST', url, true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.setRequestHeader('Authorization', apiKey);
